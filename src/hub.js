@@ -207,6 +207,8 @@ import "./components/tools/drawing-manager";
 
 import "./components/body-helper";
 import "./components/shape-helper";
+import "./components/camera-logger";
+import  "./components/change-image";
 
 import registerNetworkSchemas from "./network-schemas";
 import registerTelemetry from "./telemetry";

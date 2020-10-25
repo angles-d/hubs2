@@ -60,6 +60,59 @@
             <img id="action-button" crossorigin="anonymous" src="./assets/hud/action_button.9.png">
             <img id="button" crossorigin="anonymous" src="./assets/hud/button.9.png">
 
+            <!--POTATO IMAGES-->
+            <img id="test1" crossorigin="anonymous" src="./assets/tests/ezgif-frame-001.jpg">
+            <img id="test2" crossorigin="anonymous" src="./assets/tests/ezgif-frame-002.jpg">
+            <img id="test3" crossorigin="anonymous" src="./assets/tests/ezgif-frame-003.jpg">
+            <img id="test4" crossorigin="anonymous" src="./assets/tests/ezgif-frame-004.jpg">
+            <img id="test5" crossorigin="anonymous" src="./assets/tests/ezgif-frame-005.jpg">
+            <img id="test6" crossorigin="anonymous" src="./assets/tests/ezgif-frame-006.jpg">
+            <img id="test7" crossorigin="anonymous" src="./assets/tests/ezgif-frame-007.jpg">
+            <img id="test8" crossorigin="anonymous" src="./assets/tests/ezgif-frame-008.jpg">
+            <img id="test9" crossorigin="anonymous" src="./assets/tests/ezgif-frame-009.jpg">
+            <img id="test10" crossorigin="anonymous" src="./assets/tests/ezgif-frame-010.jpg">
+            <img id="test11" crossorigin="anonymous" src="./assets/tests/ezgif-frame-011.jpg">
+            <img id="test12" crossorigin="anonymous" src="./assets/tests/ezgif-frame-012.jpg">
+            <img id="test13" crossorigin="anonymous" src="./assets/tests/ezgif-frame-013.jpg">
+            <img id="test14" crossorigin="anonymous" src="./assets/tests/ezgif-frame-014.jpg">
+            <img id="test15" crossorigin="anonymous" src="./assets/tests/ezgif-frame-015.jpg">
+            <img id="test16" crossorigin="anonymous" src="./assets/tests/ezgif-frame-016.jpg">
+            <img id="test17" crossorigin="anonymous" src="./assets/tests/ezgif-frame-017.jpg">
+            <img id="test18" crossorigin="anonymous" src="./assets/tests/ezgif-frame-018.jpg">
+            <img id="test19" crossorigin="anonymous" src="./assets/tests/ezgif-frame-019.jpg">
+            <img id="test20" crossorigin="anonymous" src="./assets/tests/ezgif-frame-020.jpg">
+            <img id="test21" crossorigin="anonymous" src="./assets/tests/ezgif-frame-021.jpg">
+            <img id="test22" crossorigin="anonymous" src="./assets/tests/ezgif-frame-022.jpg">
+            <img id="test23" crossorigin="anonymous" src="./assets/tests/ezgif-frame-023.jpg">
+            <img id="test24" crossorigin="anonymous" src="./assets/tests/ezgif-frame-024.jpg">
+            <img id="test25" crossorigin="anonymous" src="./assets/tests/ezgif-frame-025.jpg">
+            <img id="test26" crossorigin="anonymous" src="./assets/tests/ezgif-frame-026.jpg">
+            <img id="test27" crossorigin="anonymous" src="./assets/tests/ezgif-frame-027.jpg">
+            <img id="test28" crossorigin="anonymous" src="./assets/tests/ezgif-frame-028.jpg">
+            <img id="test29" crossorigin="anonymous" src="./assets/tests/ezgif-frame-029.jpg">
+            <img id="test30" crossorigin="anonymous" src="./assets/tests/ezgif-frame-030.jpg">
+            <img id="test31" crossorigin="anonymous" src="./assets/tests/ezgif-frame-031.jpg">
+            <img id="test32" crossorigin="anonymous" src="./assets/tests/ezgif-frame-032.jpg">
+            <img id="test33" crossorigin="anonymous" src="./assets/tests/ezgif-frame-033.jpg">
+            <img id="test34" crossorigin="anonymous" src="./assets/tests/ezgif-frame-034.jpg">
+            <img id="test35" crossorigin="anonymous" src="./assets/tests/ezgif-frame-035.jpg">
+            <img id="test36" crossorigin="anonymous" src="./assets/tests/ezgif-frame-036.jpg">
+            <img id="test37" crossorigin="anonymous" src="./assets/tests/ezgif-frame-037.jpg">
+            <img id="test38" crossorigin="anonymous" src="./assets/tests/ezgif-frame-038.jpg">
+            <img id="test39" crossorigin="anonymous" src="./assets/tests/ezgif-frame-039.jpg">
+            <img id="test40" crossorigin="anonymous" src="./assets/tests/ezgif-frame-040.jpg">
+            <img id="test41" crossorigin="anonymous" src="./assets/tests/ezgif-frame-041.jpg">
+            <img id="test42" crossorigin="anonymous" src="./assets/tests/ezgif-frame-042.jpg">
+            <img id="test43" crossorigin="anonymous" src="./assets/tests/ezgif-frame-043.jpg">
+            <img id="test44" crossorigin="anonymous" src="./assets/tests/ezgif-frame-044.jpg">
+            <img id="test45" crossorigin="anonymous" src="./assets/tests/ezgif-frame-045.jpg">
+            <img id="test46" crossorigin="anonymous" src="./assets/tests/ezgif-frame-046.jpg">
+            <img id="test47" crossorigin="anonymous" src="./assets/tests/ezgif-frame-047.jpg">
+            <img id="test48" crossorigin="anonymous" src="./assets/tests/ezgif-frame-048.jpg">
+            <img id="test49" crossorigin="anonymous" src="./assets/tests/ezgif-frame-049.jpg">
+            <img id="test50" crossorigin="anonymous" src="./assets/tests/ezgif-frame-050.jpg">
+           
+
             <a-asset-item id="drawing-pen" response-type="arraybuffer" src="./assets/models/DrawingPen.glb"></a-asset-item>
             <a-asset-item id="spawn-point" response-type="arraybuffer" src="./assets/models/spawn-point.glb"></a-asset-item>
 
@@ -1235,6 +1288,8 @@
                 <template data-name="Spine">
                     <a-entity>
                         <a-entity class="chest-image" scale="0.18 0.18 0.18" position="0 -0.025 0.13"></a-entity>
+                        <!--POTATO-->
+                        <a-entity change-image></a-entity>
                     </a-entity>
                 </template>
                 <template data-name="Head">
@@ -1307,6 +1362,7 @@
             </a-entity>
         </a-entity>
         <a-entity id="viewing-rig" set-yxz-order matrix-auto-update>
+            <!--POTATO!-->
             <a-entity
                 id="viewing-camera"
                 camera="near: 0.05"
@@ -1315,8 +1371,13 @@
                 fader
                 set-yxz-order
                 pitch-yaw-rotator
-                matrix-auto-update>
-            </a-entity>
+                matrix-auto-update
+                
+                >
+                <!--camera-logger change-image-->
+                        <a-entity id="pic" geometry="primitive: plane;" position="1.25 2 -1.5"
+                        material="src: #test1; shader: flat" >
+                        </a-entity>
         </a-entity>
         <a-entity id="scene-preview-node">
         </a-entity>
