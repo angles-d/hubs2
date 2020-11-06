@@ -27,12 +27,12 @@ AFRAME.registerComponent('change-image', {
         newWorldPos.setFromMatrixPosition(cameraEl.object3D.matrixWorld);
         newWorldPosZ=newWorldPos.z.toFixed(2);
     
-        if ((newWorldPosZ>oldWorldPosZ)&&(num<250)) {
+        if ((newWorldPosZ<oldWorldPosZ)&&(num<250)) {
             wtf="GREATER"
             num++;
             var url="#"+sideName+num;
             AFRAME.utils.entity.setComponentProperty(entity, 'material.src',url);
-        }else if((newWorldPosZ<oldWorldPosZ)&&(num>1)){
+        }else if((newWorldPosZ>oldWorldPosZ)&&(num>1)){
             wtf="LESS"
             num--;
             var url="#"+sideName+num;
