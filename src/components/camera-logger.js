@@ -7,11 +7,12 @@ AFRAME.registerComponent('camera-logger', {
   log : function () {
     var cameraEl = this.el.sceneEl.camera.el;
     //var rotation = cameraEl.getAttribute('rotation');
-    var worldPos = new THREE.Vector3();
-    worldPos.setFromMatrixPosition(cameraEl.object3D.matrixWorld);
-    console.log("Time: " + this.data.seconds 
-                + "; Camera Position: (" + worldPos.x.toFixed(2) + ", " + worldPos.y.toFixed(2) + ", " + worldPos.z.toFixed(2) 
-                + ")");        
+    // var worldPos = new THREE.Vector3();
+    // worldPos.setFromMatrixPosition(cameraEl.object3D.matrixWorld);
+    console.log(this.el.object3D.rotation);
+    // console.log("Time: " + this.data.seconds 
+    //             + "; Camera Position: (" + worldPos.x.toFixed(2) + ", " + worldPos.y.toFixed(2) + ", " + worldPos.z.toFixed(2) 
+    //             + ")");        
   },
 
   play: function () {
